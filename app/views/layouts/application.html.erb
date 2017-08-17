@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Achieve</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header>
+    <ul>
+      <li><%= link_to "TOP", root_path %></li>
+      <li><%= link_to "TWEETS", tweets_path %></li>
+    </ul>
+  </header>
+
+<%= yield %>
+
+  <footer>
+    <p>有限会社日高製作所</p>
+    <p>© 2016-2017 Copyright tomoki hidaka Corp.</p>
+  </footer>
+
+</body>
+</html>
